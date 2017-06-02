@@ -28,9 +28,11 @@ And here is a statement from QuadrigaCX on the issue - [Statement on QuadrigaCX 
 
 Following are extracts of the transactions that have sent ethers to the **SafeConditionalHFTransfer** contract without specifying either the `classicTransfer(...)` or `transfer(...)` functions.
 
-Script at [scripts/getBadBeefData.sh](scripts/getBadBeefData.sh).
+These transaction are identified by the `input` field starting with `0x00000000` instead of the `web3.sha3("transfer(address)").substring(0, 10)` which is `0x1a695230`.
 
-First cut of the data at [data/BadBeefData.tsv](data/BadBeefData.tsv) from blocks #3791822 to #3791906.
+The script can be found at [scripts/getBadBeefData.sh](scripts/getBadBeefData.sh).
+
+The first cut of the data at [data/BadBeefData.tsv](data/BadBeefData.tsv) from blocks #3791822 to #3791906.
 
 I'm now running the analysis from blocks #3752970 to a recent block. Part of the data follows:
 
