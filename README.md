@@ -6,6 +6,6 @@ See [If your exchange is related to 0x027BEEFcBaD782faF69FAD12DeE97Ed894c68549, 
 
 Script at [scripts/getBadBeefData.sh](scripts/getBadBeefData.sh).
 
-First cut of the data at [data/debug.txt](data/debug.txt).
+First cut of the data at [data/BadBeefData.tsv](data/BadBeefData.tsv) from blocks #3791822 to #3791906.
 
 (c) BokkyPooBah / Bok Consulting Pty Ltd - June 02 2017
