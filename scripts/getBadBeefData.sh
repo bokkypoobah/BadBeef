@@ -12,7 +12,7 @@ var contractAddress = "0x1e143b2588705dfea63a17f2032ca123df995ce0";
 var contractAbi = [{"constant":false,"inputs":[{"name":"to","type":"address"}],"name":"transfer","outputs":[],"type":"function"},{"constant":false,"inputs":[{"name":"to","type":"address"}],"name":"classicTransfer","outputs":[],"type":"function"},{"inputs":[],"type":"constructor"}];
 var contract = web3.eth.contract(contractAbi).at(contractAddress);
 
-var startBlock = 3791822;
+var startBlock = 3752970;
 var endBlock = eth.blockNumber;
 // startBlock = parseInt(endBlock) - 100;
 var totalBadBeefEthers = new BigNumber(0);
@@ -41,9 +41,9 @@ function getData() {
                 var ethers = web3.fromWei(e.value, "ether");
                 if (e.input.substring(0, 10) == "0x00000000") {
                     totalBadBeefEthers = totalBadBeefEthers.add(ethers);
-                    var to = e.input.substring(27, 66);
+                    var to = e.input.substring(26, 66);
                     console.log("RESULT: " + e.from + "\t" + to + "\t" + e.blockNumber + "\t" + e.transactionIndex + "\t" + count + "\t" + ethers + "\t" + 
-                        totalBadBeefEthers + "\t" + "\t" + timestamp + "\t" + time.toUTCString() + "\t" + e.hash);
+                        totalBadBeefEthers + "\t" + timestamp + "\t" + time.toUTCString() + "\t" + e.hash);
                 }
             }
         }
