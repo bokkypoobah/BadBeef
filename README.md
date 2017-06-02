@@ -18,6 +18,8 @@ From [WARNING: Do NOT Use SafeConditionalHFTransfer! Or Use It Correctly](https:
 
 See also [If your exchange is related to 0x027BEEFcBaD782faF69FAD12DeE97Ed894c68549, withdraw immediately, they screwed up a few days ago and lost 60,000 ether](https://www.reddit.com/r/ethereum/comments/6eruqb/if_your_exchange_is_related_to/).
 
+And here is a statement from QuadrigaCX on the issue - [Statement on QuadrigaCX Ether contract error](https://www.reddit.com/r/ethereum/comments/6ettq5/statement_on_quadrigacx_ether_contract_error/).
+
 <br />
 
 <hr />
